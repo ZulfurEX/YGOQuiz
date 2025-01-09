@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9C27B0"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="241dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="4dp"
+        android:text="Answered:0"
+        android:textAlignment="viewStart"
+        android:textColor="#FBFBFB"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/button_hider"
+        android:layout_width="129dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:text="Hide Buttons"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/download_img"
+        android:layout_width="146dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="8dp"
+        android:text="Download 100"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_hider" />
+
+    <ImageView
+        android:id="@+id/card_image"
+        android:layout_width="214dp"
+        android:layout_height="321dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/score"
+        app:layout_constraintVertical_bias="0.195"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/answer_a"
+        android:layout_width="209dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="24dp"
+        android:text="A"
+        app:layout_constraintBottom_toTopOf="@+id/answer_b"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/answer_b"
+        android:layout_width="209dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="B"
+        app:layout_constraintBottom_toTopOf="@+id/answer_c"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/answer_c"
+        android:layout_width="209dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="20dp"
+        android:text="C"
+        app:layout_constraintBottom_toTopOf="@+id/answer_d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/answer_d"
+        android:layout_width="209dp"
+        android:layout_height="60dp"
+        android:text="D"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
