@@ -17,3 +17,5 @@ If you don't have an internet connection when you open the app the button won't 
 Also, if you already have 100 or more cards saved the button also won't appear.
 
 The app will always remember the question that you were on.
+
+![Capture Image](Capture_2025-01-04-08-22-54.webp)
